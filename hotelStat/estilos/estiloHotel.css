@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Schibsted+Grotesk:wght@500&display=swap');
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+  
+.contenedor-hotel {
+    max-width: 700px;
+    height: 320px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+}
+  
+h1 {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.formularioHoteles {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+} */
+
+/*BLOQUE PARA EL INPUT USUARIO PASSWORD*/
+/* .formularioHoteles label:first-child, .formularioHoteles label:nth-child(3) {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    padding-bottom: 3px;
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+.formularioHoteles input:nth-child(2), .formularioHoteles input:nth-child(4) {
+    padding: 8px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.formularioHoteles .botones{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 2px 0 2px;
+}
+
+.formularioHoteles .botones a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.formularioHoteles .botones a:hover {
+    color: #007bff;
+} */
+/*FIN DEL BLOQUE USUARIO*/
+
+/* form .boton-submit {
+    font-size: 1.2rem;
+    transition: background-color .4s;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 8px;
+} 
+  
+form .boton-submit {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+  
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+} */

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Schibsted+Grotesk:wght@500&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #032b3d;
+}
+  
+.contenedor-logo{
+    position: absolute;
+    z-index: -10;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    height: 200px;
+    width: 400px;
+    background: url('../imagenes/logo.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.contenedor-login {
+    width: 320px;
+    max-width: 320px;
+    height: 350px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+ 
+h1 {
+    text-align: center;
+    font-family: '' ;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    font-size: 1.9rem;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column; 
+}
+
+/*BLOQUE PARA EL INPUT USUARIO PASSWORD*/
+.formulario-login label:first-child, .formulario-login label:nth-child(3) {
+    font-family: 'Schibsted Grotesk';
+    font-size: 1.3rem;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
+.formulario-login input:nth-child(2), .formulario-login input:nth-child(4) { 
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-family: 'cabin';
+    border: 1px solid gray;
+    background: #a3bdd998;
+} 
+
+/*FIN DEL BLOQUE USUARIO*/
+
+.formulario-login .boton-submit {
+    font-size: 1.2rem;
+    transition: background-color .7s;
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 5px;
+    background-color: #064968;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: 'Cabin', sans-serif;
+} 
+
+.formulario-login .boton-submit:active {
+    transform: translateY(2px);
+  }
+  
+.formulario-login input[type="submit"]:hover {
+    background-color: #086c9a;
+}

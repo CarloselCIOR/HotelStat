@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=DM+Sans&family=Poppins&family=Quicksand&family=Schibsted+Grotesk:wght@500&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-contenedor{
+    display: flex;
+    background: #032b3d;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-contenedor nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Cabin', sans-serif;
+}
+
+.logo div{
+    background: url('../imagenes/logo.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 97%;
+}
+
+.nav-contenedor nav ul {
+    display: flex;
+    list-style: none;
+    width: 800px;
+    justify-content: space-between;
+    align-self: center;
+    place-items: center;
+    margin-right: 130px;
+}
+
+.nav-contenedor nav ul li a{
+    text-decoration: none;
+    color: rgb(204, 201, 201);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    transition: color .3s;
+    letter-spacing: 1px;
+    font-weight: 620;
+    font-family: 'Cabin', sans-serif;
+}
+
+.nav-contenedor nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#menu-boton {
+    display: none;
+}
+
+/*APARTADO DEL CUADRO PARA INFORMACIÓN DE SESIÓN*/
+.contenedor-informacion {
+  display: grid;
+  grid-template-columns: auto 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 8px 12px 8px 12px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 10px;
+  column-gap: 18px;
+  row-gap: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.contenedor-informacion:hover {
+  background-color: rgba(23, 23, 23, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contenedor-informacion i{
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  font-size: 1.5rem;
+  align-self: center;
+  color: #08760a;
+  transition: color 0.2s;
+}
+
+.contenedor-informacion i{
+  color: #08760a;
+  transition: color 0.2s;
+}
+
+.contenedor-informacion h4{
+  align-self: center;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 100;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+
+/* APARTADO PARA LA VETNANA INSERTAR */
+.contenedor-insertar{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: rgba(7, 7, 8, 0.2);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor-insertar form {
+    background: #1c1d1e;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px 50px 50px 50px;
+  }
+
+  .contenedor-insertar form h1 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-family: 'Cabin';
+    letter-spacing: 2px;
+  }
+
+  .contenedor-insertar form input {
+    height: 40px;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #3b4143;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .contenedor-insertar form select {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: #3b4143;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+
+  .contenedor-insertar form select option {
+    border-radius: none;
+  }
+
+  .contenedor-insertar form  button {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    background-color: #044c6d;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .cerrar-insertar {
+    position: absolute;
+    top: 10%;
+    right: 35%;
+    width: 60px;
+    height: 30px;
+  }
+
+/* APARTADO PARA LA VETANA ACTUALIZAR */
+.contenedor-actualizar{
+  display: none;
+  position: fixed;
+  width: 100%;
+  background: rgba(7, 7, 8, 0.2);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-actualizar form {
+  background: #1c1d1e;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px 50px 50px 50px;
+}
+
+.contenedor-actualizar form h1 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-family: 'Cabin';
+  letter-spacing: 2px;
+}
+
+.contenedor-actualizar form input {
+  height: 40px;
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3b4143;
+  color: white;
+  font-size: 1rem;
+}
+
+.contenedor-actualizar form  button {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background-color: #044c6d;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.cerrar-actualizar {
+  position: absolute;
+  top: 10%;
+  right: 35%;
+  width: 60px;
+  height: 30px;
+}
+
+/* BLOQUE DE DISEÑO PARA EL PIE */
+.piepagina{
+  display: flex;
+  background: #032b3d;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 50px 20px 50px;
+}
+
+.encabezado-footer{
+  font-size: 15px;
+  color: white;
+  text-decoration: solid;
+}
+
+footer{
+  position: absolute;
+  font-size: 13px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: rgb(219, 219, 219);
+}
+
+.seccion{
+  justify-content: space-between;
+  align-self: center;
+  margin: 10px;
+}
+
+
+/* ------------------------------------------- */
+
+
+/* APARTADO PARA LA VETNANA INSERTAR */
+.contenedor-insertarHotel{
+  display: none;
+  position: fixed;
+  width: 100%;
+  background: rgba(7, 7, 8, 0.2);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-insertarHotel form {
+  background: #1c1d1e;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px 50px 50px 50px;
+}
+
+.contenedor-insertarHotel form h1 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-family: 'Cabin';
+  letter-spacing: 2px;
+}
+
+.contenedor-insertarHotel form input {
+  height: 40px;
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3b4143;
+  color: white;
+  font-size: 1rem;
+}
+
+.contenedor-insertarHotel form select {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+  background-color: #3b4143;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.contenedor-insertarHotel form select option {
+  border-radius: none;
+}
+
+.contenedor-insertarHotel form  button {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background-color: #044c6d;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.cerrar-insertarHotel {
+  position: absolute;
+  top: 10%;
+  right: 35%;
+  width: 60px;
+  height: 30px;
+}
+
+/* APARTADO PARA LA VETANA ACTUALIZAR */
+.contenedor-actualizarHotel{
+display: none;
+position: fixed;
+width: 100%;
+background: rgba(7, 7, 8, 0.2);
+height: 100vh;
+align-items: center;
+justify-content: center;
+}
+
+.contenedor-actualizarHotel form {
+background: #1c1d1e;
+width: 400px;
+border-radius: 10px;
+padding: 10px 50px 50px 50px;
+}
+
+.contenedor-actualizarHotel form h1 {
+font-size: 1.7rem;
+text-transform: capitalize;
+font-family: 'Cabin';
+letter-spacing: 2px;
+}
+
+.contenedor-actualizarHotel form input {
+height: 40px;
+width: 100%;
+padding: 18px;
+margin-bottom: 25px;
+border: none;
+border-radius: 50px;
+background-color: #3b4143;
+color: white;
+font-size: 1rem;
+}
+
+.contenedor-actualizarHotel form  button {
+height: 40px;
+width: 100%;
+padding: 10px;
+background-color: #044c6d;
+border: none;
+border-radius: 20px;
+color: #fff;
+font-size: 1rem;
+}
+
+.cerrar-actualizarHotel {
+position: absolute;
+top: 10%;
+right: 35%;
+width: 60px;
+height: 30px;
+}
+
+/* BLOQUE DE DISEÑO PARA EL PIE */
+.piepagina{
+display: flex;
+background: #032b3d;
+width: 100%;
+margin: 0 auto;
+padding: 20px 50px 20px 50px;
+}
+
+.encabezado-footer{
+font-size: 15px;
+color: white;
+text-decoration: solid;
+}
+
+footer{
+position: absolute;
+font-size: 13px;
+bottom: 0;
+right: 0;
+left: 0;
+color: rgb(219, 219, 219);
+}
+
+.seccion{
+justify-content: space-between;
+align-self: center;
+margin: 10px;
+}
+
+
+/*-----------------------------------------------------------------*/
+
+/* APARTADO PARA LA VETNANA INSERTAR */
+.contenedor-insertarRegistro{
+  display: none;
+  position: fixed;
+  width: 100%;
+  background: rgba(7, 7, 8, 0.3);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-insertarRegistro label{
+  padding-left: 15px;
+  padding-bottom: 4px;
+}
+
+.contenedor-insertarRegistro form {
+  background: #1c1d1e;
+  width: 850px;
+  border-radius: 10px;
+  padding: 10px 50px 10px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  column-gap: 50px;
+}
+
+.contenedor-insertarRegistro form h1 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-family: 'Cabin';
+  letter-spacing: 2px;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.bloque1{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.bloque2{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.contenedor-insertarRegistro form input {
+  height: 40px;
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3b4143;
+  color: white;
+  font-size: 1rem;
+}
+
+.contenedor-insertarRegistro form select {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+  background-color: #3b4143;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.contenedor-insertarRegistro form select option {
+  border-radius: none;
+}
+
+.contenedor-insertarRegistro form  button {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background-color: #044c6d;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1rem;
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+}
+
+.cerrar-insertarRegistro {
+  position: absolute;
+  top: 10%;
+  right: 35%;
+  width: 60px;
+  height: 30px;
+}
+
+/* APARTADO PARA LA VETANA ACTUALIZAR */
+.contenedor-actualizarRegistro{
+display: none;
+position: fixed;
+width: 100%;
+background: rgba(7, 7, 8, 0.2);
+height: 100vh;
+align-items: center;
+justify-content: center;
+}
+
+.contenedor-actualizarRegistro form {
+background: #1c1d1e;
+width: 400px;
+border-radius: 10px;
+padding: 10px 50px 50px 50px;
+}
+
+.contenedor-actualizarRegistro form h1 {
+font-size: 1.7rem;
+text-transform: capitalize;
+font-family: 'Cabin';
+letter-spacing: 2px;
+}
+
+.contenedor-actualizarRegistro form input {
+height: 40px;
+width: 100%;
+padding: 18px;
+margin-bottom: 25px;
+border: none;
+border-radius: 50px;
+background-color: #3b4143;
+color: white;
+font-size: 1rem;
+}
+
+.contenedor-actualizarRegistro form  button {
+height: 40px;
+width: 100%;
+padding: 10px;
+background-color: #044c6d;
+border: none;
+border-radius: 20px;
+color: #fff;
+font-size: 1rem;
+}
+
+.contenedor-actualizarRegistro form select {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+  background-color: #3b4143;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.contenedor-actualizarRegistro form select option {
+  border-radius: none;
+}
+
+.cerrar-actualizarRegistro {
+position: absolute;
+top: 10%;
+right: 35%;
+width: 60px;
+height: 30px;
+}
+
+/* BLOQUE DE DISEÑO PARA EL PIE */
+.piepagina{
+display: flex;
+background: #032b3d;
+width: 100%;
+margin: 0 auto;
+padding: 20px 50px 20px 50px;
+}
+
+.encabezado-footer{
+font-size: 15px;
+color: white;
+text-decoration: solid;
+}
+
+footer{
+position: absolute;
+font-size: 13px;
+bottom: 0;
+right: 0;
+left: 0;
+color: rgb(219, 219, 219);
+}
+
+.seccion{
+justify-content: space-between;
+align-self: center;
+margin: 10px;
+}
